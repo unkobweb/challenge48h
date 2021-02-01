@@ -2,6 +2,7 @@ const express = require("express")
 const app = express()
 const session = require("express-session")
 const router = require("./web")
+const path = require("path")
 const PORT = 8000
 
 app.use(express.static(__dirname + "/assets"));
