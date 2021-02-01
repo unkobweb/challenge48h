@@ -53,12 +53,18 @@ font-size: 100px;
 }
 
 .header__instruction--titre-detail { 
-font-size: 30px; 
 font-family: 'Inconsolata'; 
 display: flex;
 align-items: center;
 flex-direction: column;
 font-size: 50px;
+}
+
+.header__instruction_mdp{
+display: flex;
+align-items: center;
+flex-direction: column;
+font-size: 30px;
 }
 
 .menu1 {
