@@ -1,0 +1,22 @@
+{
+  "name": "challenge48h",
+  "version": "1.0.0",
+  "description": "![Couverture](https://tryhackme.com/img/illustrations/TryHackMe_OSCP.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unkobweb/challenge48h.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unkobweb/challenge48h/issues"
+  },
+  "homepage": "https://github.com/unkobweb/challenge48h#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
