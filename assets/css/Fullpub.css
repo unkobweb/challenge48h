@@ -141,8 +141,9 @@ body, html {  /* On selectionne la parti que l'on veut modifier. */
 
 .spam_dev{
     color: greenyellow;
-    margin-left: 70%;
-    padding-top: -10%;
+    margin-left: 60%;
+    transform: rotate(20deg);    
+
 }
 
 .spam_bouton2 {
@@ -193,8 +194,8 @@ body, html {  /* On selectionne la parti que l'on veut modifier. */
                                       rgba(0, 0, 0, 0));
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
                 inset -2px -2px 3px rgba(0, 0, 0, .6);
-    margin-left: 20%;
-    margin-top: 20%;
+    margin-left: 30%;
+    margin-top: 5%;
   
 
 }

@@ -1,3 +1,10 @@
-function clignote(obj){
-    setInterval(function(){obj.style.visibility= } )
-}
+document.querySelector('.spam_bouton3').addEventListener ('click', (e) => {
+    e.preventDefault();
+
+    const audio = document.querySelector("audio");
+    audio.volume = 0.2;
+    audio.play();
+
+    clickTarget.removeEventListener('click', (e));
+
+  });
