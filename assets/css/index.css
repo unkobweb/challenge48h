@@ -74,6 +74,19 @@ body, html {
   color: #fff;
 }
 
+.help{
+  text-align: end;
+  padding: 14px 40px;
+}
+
+.Aide{
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
 .input {
   border: 1px solid #2ecc71;
 }
