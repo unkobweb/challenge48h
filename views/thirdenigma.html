@@ -13,9 +13,27 @@
     <link rel="stylesheet" href="../assets/css/thirdenigma.css">
 </head>
 <body>
-    <header>
-        <h1>Titre provisoire</h1>
-        <h2>Snowden</h2>
-    </header>
+    <form action="" method="POST">
+        <div class="header">
+            <div class="header__texture"></div>
+            <div class="header__mask">
+                <svg width="100%" height="150%" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <path class="path" d="M0 100 L 0 0 C 25 100 75 100 100 0 L 100 100" fill="#202020"></path>
+                </svg>
+            </div>
+            <div class="container">
+                <div class="header__instruction">
+                    <h2 class="header__instruction--titre"> Enigme n°3</h2>
+                    <h3 class="header__instruction--titre-detail">Snowden</h3>
+                </div>
+            </div>
+        </div>
+        <div class="egnime1">
+            <h3 class="result">Entrer votre réponse :</h3>
+            <label for="string"></label>
+            <input class="input" type="text" name="string" id="string">
+            <input class="submit" type="submit" value="Valider">
+        </div>
+    </form>
 </body>
 </html>
