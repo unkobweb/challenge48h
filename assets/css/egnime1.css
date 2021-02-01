@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body, html {  /* On selectionne la parti que l'on veut modifier. */
     margin: 0; /* La propriété margin définit la taille des marges sur les quatre côtés de l'élément. C'est une propriété raccourcie qui permet de manipuler les autres propriétés de marges : margin-top, margin-right, margin-bottom et margin-left. */
     padding: 0; /* La propriété padding est une propriété raccourcie qui permet de définir les différents écarts de remplissage sur les quatre côtés d'un élément (cf. les boîtes CSS).  */
@@ -49,7 +54,7 @@ body, html {  /* On selectionne la parti que l'on veut modifier. */
 
 .header__instruction--titre { /* On selectionne la parti que l'on veut modifier. */
     font-size: 40px; /* La propriété font-size définit la taille de fonte utilisée pour le texte. La modification de cette taille peut entraîner la modification de la taille d'autres éléments car elle est utilisée pour calculer les valeurs des longueurs relatives (type <length>) (par exemple exprimées avec les unités em ou ex). */
-    margin-top: 10px;
+    margin-top: 100px;
 }
 
 .header__instruction--titre-detail { /* On selectionne la parti que l'on veut modifier. */
@@ -90,13 +95,17 @@ body, html {  /* On selectionne la parti que l'on veut modifier. */
 }
 
 .submit {
-    border: 1px solid;
+    /* border: 1px solid; */
+    font-family: 'Inconsolata';
+    border: none;
     background-color: white;
     color: black;
     transition: all 0.5s ease;
+    padding: 7px;
 }
 
 .submit:hover {
+    font-size: 16px;
     background-color: #009432;
     color: white;
     border-radius: 100px;
@@ -107,6 +116,7 @@ body, html {  /* On selectionne la parti que l'on veut modifier. */
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 50px;
 }
   
   .thegoat h1 {
