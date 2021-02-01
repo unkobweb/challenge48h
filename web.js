@@ -5,7 +5,7 @@ const urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 const homeController = require("./controllers/homeController");
 const snowdenController = require("./controllers/snowdenController");
-const constructController = require("./controllers/constructController");
+const toServerController = require("./controllers/toServerController");
 
 router.use("/", (req, res, next) => {
     console.log(req.session)
@@ -13,7 +13,7 @@ router.use("/", (req, res, next) => {
 })
 router.get("/", homeController.helloWorld)
 router.get("/snowden", snowdenController.snowden)
-router.get("/construct", constructController.construct)
+router.get("/toServer", toServerController.construct)
 
 router.get("/logout", homeController.logout)
 router.post("/login", urlencodedParser, homeController.loginForm )
