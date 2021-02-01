@@ -18,6 +18,10 @@ function countdown(req, res) {
     res.sendFile(path.join(__dirname,"../views","countdown.html"))
 }
 
+function thecode(req, res){
+    res.sendFile(path.join(__dirname,"../views","youwin.html"))
+}
+
 function logout(req, res) {
     req.session.destroy()
     res.redirect("/")

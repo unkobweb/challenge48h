@@ -20,6 +20,7 @@ router.post("/login", urlencodedParser, homeController.loginForm )
 router.get("/snowden", snowdenController.snowden)
 router.get("/teleport", homeController.teleport)
 router.get("/countdown", homeController.countdown)
+router.get("/youwin", homeController.thecode)
 
 router.post("/acceptCode", urlencodedParser, snowdenController.acceptCode)
 
