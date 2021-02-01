@@ -204,6 +204,8 @@ body, html {  /* On selectionne la parti que l'on veut modifier. */
     background-color: rgb(231, 15, 148);
 }
 
-
+.indice{
+    text-align: center;
+}
 
 

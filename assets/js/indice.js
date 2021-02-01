@@ -1,0 +1,1 @@
+console.log("Le dossier contient un fichier js intriguant. Essayez d'en savoir plus !")
