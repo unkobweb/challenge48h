@@ -10,9 +10,13 @@ function loginForm(req, res) {
     res.redirect("/")
 }
 
+function teleport(req, res) {
+    res.sendFile(path.join(__dirname,"../views","teleport.html"))
+}
+
 function logout(req, res) {
     req.session.destroy()
     res.redirect("/")
 }
 
-module.exports = { helloWorld, loginForm, logout }
+module.exports = { helloWorld, loginForm, logout, teleport }

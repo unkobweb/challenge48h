@@ -18,6 +18,7 @@ router.get("/construct", constructController.construct)
 router.get("/logout", homeController.logout)
 router.post("/login", urlencodedParser, homeController.loginForm )
 router.get("/snowden", snowdenController.snowden)
+router.get("/teleport", homeController.teleport)
 
 router.post("/acceptCode", urlencodedParser, snowdenController.acceptCode)
 
