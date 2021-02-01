@@ -1,20 +1,22 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-body{
-  background-image: url(/assets/img/Matrix_.gif);
-  background-size: cover;
-}
-
-header {
-  text-align: center;
-}
-
 body, html {  /* On selectionne la parti que l'on veut modifier. */
   margin: 0; /* La propriété margin définit la taille des marges sur les quatre côtés de l'élément. C'est une propriété raccourcie qui permet de manipuler les autres propriétés de marges : margin-top, margin-right, margin-bottom et margin-left. */
   padding: 0; /* La propriété padding est une propriété raccourcie qui permet de définir les différents écarts de remplissage sur les quatre côtés d'un élément (cf. les boîtes CSS).  */
-  font-family: 'Nunito'; /* La propriété font-family permet de définir une liste, ordonnée par priorité, de polices à utiliser pour mettre en forme le texte de l'élément ciblé. */
+  font-family: 'Nunito';
+  background-color: #1f1f1f; /* La propriété font-family permet de définir une liste, ordonnée par priorité, de polices à utiliser pour mettre en forme le texte de l'élément ciblé. */
+}
+
+.container { /* On selectionne la parti que l'on veut modifier. */
+  width: 90%; /* La propriété width permet de définir la largeur de la boîte du contenu d'un élément. Par défaut, sa valeur est auto, c'est à dire la largeur automatiquement calculée de son contenu. Si box-sizing vaut border-box, la valeur appliquée incluera les dimensions de la boîte d'encadrement (border) et de la boîte de remplissage (padding). */
+  margin: auto; /* La propriété margin définit la taille des marges sur les quatre côtés de l'élément. C'est une propriété raccourcie qui permet de manipuler les autres propriétés de marges : margin-top, margin-right, margin-bottom et margin-left. */
+  position: relative; /* La propriété position définit la façon dont un élément est positionné dans un document. Les propriétés top, right, bottom et left déterminent l'emplacement final de l'élément positionné. */
+  z-index: 999; /* La propriété z-index définit le « z-order » (NdT : « ordre z » n'est pas usité) d'un élément positionné et de ses éléments fils ou de ses éléments flexibles (les enfants d'un élément avec display: flex). Lorsque des éléments se chevauchent, le z-order détermine l'ordre des différentes couches que formeront les éléments. Généralement, un élément couvrira un autre élément si sa valeur de  z-index est supérieure à celle du deuxième élément. */
+}
+.header { /* On selectionne la parti que l'on veut modifier. */
+  height: 450px; /* La propriété height définit la hauteur de la boîte de contenu d'un élément. La boîte de contenu est à l'intérieur de la boîte de remplissage (padding) qui est à l'intérieur de la boîte de bordure qui est elle-même à l'intérieur de la boîte de marge de l'élément. Si la propriété box-sizing vaut border-box, cette propriété détermine la hauteur de la boîte de marge. */
+  width: 100%; /* La propriété width permet de définir la largeur de la boîte du contenu d'un élément. Par défaut, sa valeur est auto, c'est à dire la largeur automatiquement calculée de son contenu. Si box-sizing vaut border-box, la valeur appliquée incluera les dimensions de la boîte d'encadrement (border) et de la boîte de remplissage (padding). */
+  background: rgb(0, 0, 0); /* La propriété CSS background est une propriété raccourcie qui permet de définir les différentes valeurs des propriétés liées à la gestion des arrière-plans d'un élément (couleur, image, origine, taille, répétition, etc.). */
+  position: relative; /* La propriété position définit la façon dont un élément est positionné dans un document. Les propriétés top, right, bottom et left déterminent l'emplacement final de l'élément positionné. */
+  text-align: center;
 }
 
 .container { /* On selectionne la parti que l'on veut modifier. */
@@ -74,6 +76,55 @@ body, html {  /* On selectionne la parti que l'on veut modifier. */
 
 .egnime1 {
   text-align: center;
+}
+
+.header__texture { /* On selectionne la parti que l'on veut modifier. */
+  width: 100%; /* La propriété width permet de définir la largeur de la boîte du contenu d'un élément. Par défaut, sa valeur est auto, c'est à dire la largeur automatiquement calculée de son contenu. Si box-sizing vaut border-box, la valeur appliquée incluera les dimensions de la boîte d'encadrement (border) et de la boîte de remplissage (padding). */
+  height: 100%; /* La propriété height définit la hauteur de la boîte de contenu d'un élément. La boîte de contenu est à l'intérieur de la boîte de remplissage (padding) qui est à l'intérieur de la boîte de bordure qui est elle-même à l'intérieur de la boîte de marge de l'élément. Si la propriété box-sizing vaut border-box, cette propriété détermine la hauteur de la boîte de marge. */
+  position: absolute; /* La propriété position définit la façon dont un élément est positionné dans un document. Les propriétés top, right, bottom et left déterminent l'emplacement final de l'élément positionné. */
+  left: 0; /* La propriété top définit une partie de la position des éléments positionnés, elle n'a aucun effet pour les éléments non-positionnés. */
+  background: url('../img/Matrix_Code_Animation_Gif_Free_Animated_Background.gif') center no-repeat; /* La propriété CSS background est une propriété raccourcie qui permet de définir les différentes valeurs des propriétés liées à la gestion des arrière-plans d'un élément (couleur, image, origine, taille, répétition, etc.). */
+  background-size: cover; /* La propriété CSS background-size définit la taille des images d'arrière-plan pour l'élément. La taille de l'image peut être contrainte, complètement ou partiellement afin de conserver ses proportions. */
+  z-index: 1; /* La propriété z-index définit le « z-order » (NdT : « ordre z » n'est pas usité) d'un élément positionné et de ses éléments fils ou de ses éléments flexibles (les enfants d'un élément avec display: flex). Lorsque des éléments se chevauchent, le z-order détermine l'ordre des différentes couches que formeront les éléments. Généralement, un élément couvrira un autre élément si sa valeur de  z-index est supérieure à celle du deuxième élément. */
+  opacity: 0.6; /* La propriété opacity définit la transparence d'un élément. Autrement dit, elle permet de définir le degré de visibilité de l'arrière-plan sur lequel est placé l'élément. */
+}
+
+.header__mask { /* On selectionne la parti que l'on veut modifier. */
+  position: absolute; /* La propriété position définit la façon dont un élément est positionné dans un document. Les propriétés top, right, bottom et left déterminent l'emplacement final de l'élément positionné. */
+  bottom: 0; /* La propriété bottom contribue à la définition de l'emplacement vertical des éléments positionnés. Elle n'a aucun effet pour les éléments non-positionnés. */
+  background: 0 0; /* La propriété CSS background est une propriété raccourcie qui permet de définir les différentes valeurs des propriétés liées à la gestion des arrière-plans d'un élément (couleur, image, origine, taille, répétition, etc.). */
+  height: 42px; /* La propriété height définit la hauteur de la boîte de contenu d'un élément. La boîte de contenu est à l'intérieur de la boîte de remplissage (padding) qui est à l'intérieur de la boîte de bordure qui est elle-même à l'intérieur de la boîte de marge de l'élément. Si la propriété box-sizing vaut border-box, cette propriété détermine la hauteur de la boîte de marge. */
+  width: 100%; /* La propriété width permet de définir la largeur de la boîte du contenu d'un élément. Par défaut, sa valeur est auto, c'est à dire la largeur automatiquement calculée de son contenu. Si box-sizing vaut border-box, la valeur appliquée incluera les dimensions de la boîte d'encadrement (border) et de la boîte de remplissage (padding). */
+  z-index: 10; /* La propriété z-index définit le « z-order » (NdT : « ordre z » n'est pas usité) d'un élément positionné et de ses éléments fils ou de ses éléments flexibles (les enfants d'un élément avec display: flex). Lorsque des éléments se chevauchent, le z-order détermine l'ordre des différentes couches que formeront les éléments. Généralement, un élément couvrira un autre élément si sa valeur de  z-index est supérieure à celle du deuxième élément. */
+}
+
+.header__instruction { /* On selectionne la parti que l'on veut modifier. */
+  text-align: center; /* La propriété text-align définit l'alignement horizontal d'un élément de bloc ou de la boîte d'une cellule de tableau. Cette propriété fonctionne donc de façon analogue à vertical-align mais dans le sens horizontal. */
+  color: #fff; /* La propriété background-color permet de définir la couleur utilisée pour l'arrière-plan d'un élément (celle-ci peut être une couleur transparente). */
+}
+
+.header__instruction--titre { /* On selectionne la parti que l'on veut modifier. */
+  font-size: 40px; /* La propriété font-size définit la taille de fonte utilisée pour le texte. La modification de cette taille peut entraîner la modification de la taille d'autres éléments car elle est utilisée pour calculer les valeurs des longueurs relatives (type <length>) (par exemple exprimées avec les unités em ou ex). */
+}
+
+.header__instruction--titre-detail { /* On selectionne la parti que l'on veut modifier. */
+  font-size: 30px; /* La propriété font-size définit la taille de fonte utilisée pour le texte. La modification de cette taille peut entraîner la modification de la taille d'autres éléments car elle est utilisée pour calculer les valeurs des longueurs relatives (type <length>) (par exemple exprimées avec les unités em ou ex). */
+  font-family: 'Inconsolata'; /* La propriété font-family permet de définir une liste, ordonnée par priorité, de polices à utiliser pour mettre en forme le texte de l'élément ciblé. */
+}
+
+.menu1 {
+  color: rgba(0, 0, 0, 0);
+}
+
+.menu2 {
+  color: rgba(0, 0, 0, 0);
+}
+
+.button{
+  text-align: center;
+  margin-left: 45,5%;
+  width: 50%;
+  border-radius: 8px;
 }
 
 .input {
