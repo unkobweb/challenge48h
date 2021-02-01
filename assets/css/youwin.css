@@ -1,63 +1,115 @@
-* {
-  margin: 0;
-  padding: 0;
+body, html {  
+margin: 0;
+padding: 0; 
+font-family: 'Nunito';
+background-color:#202020; 
 }
 
-body {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.container { 
+width: 96%;
+margin: auto;
+position: relative; 
+z-index: 999; 
+}
+.header { 
+height: 450px; 
+width: 100%; 
+background: rgb(0, 0, 0); 
+position: relative; 
 }
 
-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.header__texture { 
+width: 100%; 
+height: 100%; 
+position: absolute; 
+left: 0; 
+background: url('../img/Matrix_Code_Animation_Gif_Free_Animated_Background.gif') center no-repeat;
+background-size: cover;
+z-index: 1; 
+opacity: 0.6; 
 }
 
-h1 {
-  animation: slideDown 2s forwards;
+.header__mask { 
+position: absolute; 
+bottom: 0; 
+background: 0 0;
+height: 42px; 
+width: 100%;
+z-index: 10;
+} 
+
+.header__instruction { 
+text-align: center;
+color: #fff;
+margin-top: 100px;
 }
 
-h2 {
-  min-height: 100px;
-  vertical-align: center;
-  animation: zoomUnzoom 10s infinite;
+.header__instruction--titre { 
+
+display: flex;
+align-items: center;
+flex-direction: column;
+font-size: 90px;
+margin-top: -50px;
 }
 
-pre {
-  animation: slideUp 2s forwards;
+.header__instruction--titre-detail { 
+font-family: 'Inconsolata'; 
+display: flex;
+align-items: center;
+flex-direction: column;
+font-size: 50px;
 }
 
-@keyframes slideDown {
-  0% {
-    transform: translateY(-40px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.header__instruction_mdp{
+display: flex;
+align-items: center;
+flex-direction: column;
+font-size: 30px;
 }
 
-@keyframes slideUp {
-  0% {
-    transform: translateY(40px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.menu1 {
+color: rgba(0, 0, 0, 0);
 }
 
-@keyframes zoomUnzoom {
-  0% {
-    font-size: 40px;
-  }
-  50% {
-    font-size: 60px;
-  }
-  100% {
-    font-size: 40px;
-  }
+.menu2 {
+color: rgba(0, 0, 0, 0);
+}
+
+.button{
+text-align: center;
+padding: 14px 40px;
+
+}
+.valid{
+width: 150px;
+height: 50px;
+border-radius: 8px;
+background-color: #ffffff;
+color: #1f1f1f;
+}
+
+.input {
+border: 1px solid #2ecc71;
+}
+
+.thegoat
+{
+color: white;
+display: flex;
+align-items: center;
+flex-direction: column;
+
+}
+
+.thegoat 
+{
+margin-top: 0px;
+}
+
+#numberEnigma {
+  text-align: right;
+  color: white;
+  font-size: 24px;
+  padding-top: 12px;
 }
