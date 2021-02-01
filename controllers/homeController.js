@@ -14,9 +14,13 @@ function teleport(req, res) {
     res.sendFile(path.join(__dirname,"../views","teleport.html"))
 }
 
+function countdown(req, res) {
+    res.sendFile(path.join(__dirname,"../views","countdown.html"))
+}
+
 function logout(req, res) {
     req.session.destroy()
     res.redirect("/")
 }
 
-module.exports = { helloWorld, loginForm, logout, teleport }
+module.exports = { helloWorld, loginForm, logout, teleport, countdown, thecode }
