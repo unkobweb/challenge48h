@@ -1,6 +1,25 @@
 const path = require("path")
+const puzzles = ["whiteonwhite","binaryand64","spam","snowden","teleport","encryptedNetwork","finish"]
 
-function helloWorld(req, res) {
+function giveMePuzzle(req, res){
+    
+    if (!req.session.puzzleLevel){
+        req.session.puzzleLevel = 0
+    }
+
+    res.sendFile(path.join(__dirname,"../views",puzzles[req.session.puzzleLevel]+".html"))
+
+}
+
+function clue(req, res){
+    if (puzzles[req.session.puzzleLevel] == "spam"){
+        res.sendFile(path.join(__dirname,"../views","clue.html"))
+    } else {
+        res.redirect("/")
+    }
+}
+
+/*function helloWorld(req, res) {
     res.sendFile(path.join(__dirname,"../views","index.html"))
 }
 
@@ -25,6 +44,6 @@ function thecode(req, res){
 function logout(req, res) {
     req.session.destroy()
     res.redirect("/")
-}
+}*/
 
-module.exports = { helloWorld, loginForm, logout, teleport, countdown, thecode }
+module.exports = { giveMePuzzle, clue }
