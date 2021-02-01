@@ -2,7 +2,7 @@ body, html {  /* On selectionne la parti que l'on veut modifier. */
     margin: 0; /* La propriété margin définit la taille des marges sur les quatre côtés de l'élément. C'est une propriété raccourcie qui permet de manipuler les autres propriétés de marges : margin-top, margin-right, margin-bottom et margin-left. */
     padding: 0; /* La propriété padding est une propriété raccourcie qui permet de définir les différents écarts de remplissage sur les quatre côtés d'un élément (cf. les boîtes CSS).  */
     font-family: 'Nunito'; /* La propriété font-family permet de définir une liste, ordonnée par priorité, de polices à utiliser pour mettre en forme le texte de l'élément ciblé. */
-    background-color: #1e2125;
+    background-color: #202020;
 }
 
 .container { /* On selectionne la parti que l'on veut modifier. */
@@ -42,11 +42,14 @@ body, html {  /* On selectionne la parti que l'on veut modifier. */
 .header__instruction { /* On selectionne la parti que l'on veut modifier. */
     text-align: center; /* La propriété text-align définit l'alignement horizontal d'un élément de bloc ou de la boîte d'une cellule de tableau. Cette propriété fonctionne donc de façon analogue à vertical-align mais dans le sens horizontal. */
     color: #fff; /* La propriété background-color permet de définir la couleur utilisée pour l'arrière-plan d'un élément (celle-ci peut être une couleur transparente). */
-    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .header__instruction--titre { /* On selectionne la parti que l'on veut modifier. */
     font-size: 40px; /* La propriété font-size définit la taille de fonte utilisée pour le texte. La modification de cette taille peut entraîner la modification de la taille d'autres éléments car elle est utilisée pour calculer les valeurs des longueurs relatives (type <length>) (par exemple exprimées avec les unités em ou ex). */
+    margin-top: 10px;
 }
 
 .header__instruction--titre-detail { /* On selectionne la parti que l'on veut modifier. */
@@ -98,3 +101,14 @@ body, html {  /* On selectionne la parti que l'on veut modifier. */
     color: white;
     border-radius: 100px;
 }
+
+.thegoat{
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+  
+  .thegoat h1 {
+    margin-top: 0px;
+  }
