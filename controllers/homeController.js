@@ -6,7 +6,13 @@ function helloWorld(req, res) {
 
 function loginForm(req, res) {
     console.log(req.body)
+    req.session.blaze = req.body.blaze
     res.redirect("/")
 }
 
-module.exports = { helloWorld, loginForm }
+function logout(req, res) {
+    req.session.destroy()
+    res.redirect("/")
+}
+
+module.exports = { helloWorld, loginForm, logout }
