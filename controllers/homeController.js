@@ -4,4 +4,9 @@ function helloWorld(req, res) {
     res.sendFile(path.join(__dirname,"../views","index.html"))
 }
 
-module.exports = { helloWorld }
+function loginForm(req, res) {
+    console.log(req.body)
+    res.redirect("/")
+}
+
+module.exports = { helloWorld, loginForm }
