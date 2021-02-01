@@ -54,11 +54,11 @@ body, html {  /* On selectionne la parti que l'on veut modifier. */
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 50px;
 }
 
 .header__instruction--titre { /* On selectionne la parti que l'on veut modifier. */
     font-size: 40px; /* La propriété font-size définit la taille de fonte utilisée pour le texte. La modification de cette taille peut entraîner la modification de la taille d'autres éléments car elle est utilisée pour calculer les valeurs des longueurs relatives (type <length>) (par exemple exprimées avec les unités em ou ex). */
-    margin-top: 50px;
 }
 
 .header__instruction--titre-detail { /* On selectionne la parti que l'on veut modifier. */
@@ -69,12 +69,28 @@ body, html {  /* On selectionne la parti que l'on veut modifier. */
 
 .egnime1 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 160px;
     color: #fff;
 }
 
 .input {
     border: 1px solid #2ecc71;
+    padding: 5px;
+}
+
+.submit {
+    background-color: #ffffff;
+    font-size: 16px;
+    border: none;
+    transition: 0.5s;
+    font-family: 'Inconsolata';
+    padding: 5px;
+}
+
+.submit:hover {
+    background-color: #2ecc71;
+    color: white;
+    font-size: 18px;
 }
 
 .thegoat{
@@ -82,8 +98,5 @@ body, html {  /* On selectionne la parti que l'on veut modifier. */
     display: flex;
     align-items: center;
     flex-direction: column;
-}
-
-.thegoat h1 {
-    margin-top: 0px;
+    padding: 50px;
 }
