@@ -66,3 +66,13 @@ body, html {  /* On selectionne la parti que l'on veut modifier. */
 .input {
     border: 1px solid #2ecc71;
 }
+
+.contain_h4 {
+    text-align: center;
+    display: none;
+}
+
+.contain_h5 {
+    text-align: center;
+    color: white;
+}
