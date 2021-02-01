@@ -140,7 +140,7 @@ body, html {  /* On selectionne la parti que l'on veut modifier. */
 
 
 .spam_dev{
-    color: greenyellow;
+    color: rgb(0, 0, 0);
     margin-left: 60%;
     transform: rotate(20deg);    
 
