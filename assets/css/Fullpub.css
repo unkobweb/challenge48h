@@ -208,4 +208,8 @@ body, html {  /* On selectionne la parti que l'on veut modifier. */
     text-align: center;
 }
 
+.back{
+    margin-left: 2%;
+    padding-top: 20%;
 
+}
