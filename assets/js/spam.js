@@ -8,3 +8,4 @@ document.querySelector('.spam_bouton3').addEventListener ('click', (e) => {
     clickTarget.removeEventListener('click', (e));
 
   });
+window.alert("ADBLOCK A CESSÉ DE FONCTIONNER !!!");
