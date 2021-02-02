@@ -78,11 +78,15 @@ body, html {  /* On selectionne la parti que l'on veut modifier. */
     text-align: center;
     margin-top: 160px;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .input {
     border: 1px solid #2ecc71;
     padding: 5px;
+    border-radius: 2px;
 }
 
 .submit {
@@ -107,3 +111,44 @@ body, html {  /* On selectionne la parti que l'on veut modifier. */
     flex-direction: column;
     padding: 50px;
 }
+
+button {
+    display: inline-block;
+    background-color: #ff0000;
+    border-radius: 10px;
+    border: 4px double #ff0000;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 120px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-family: 'Nunito'
+  }
+  button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  button:hover {
+    background-color: #27ae60;
+    border: 4px double #27ae60;
+  }
+  button:hover span {
+    padding-right: 25px;
+  }
+  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
