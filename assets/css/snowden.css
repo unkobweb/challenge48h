@@ -61,11 +61,13 @@ body, html {  /* On selectionne la parti que l'on veut modifier. */
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 5px;
 }
 
 .header__instruction--titre { /* On selectionne la parti que l'on veut modifier. */
-    font-size: 40px; /* La propriété font-size définit la taille de fonte utilisée pour le texte. La modification de cette taille peut entraîner la modification de la taille d'autres éléments car elle est utilisée pour calculer les valeurs des longueurs relatives (type <length>) (par exemple exprimées avec les unités em ou ex). */
+    font-size: 50px; /* La propriété font-size définit la taille de fonte utilisée pour le texte. La modification de cette taille peut entraîner la modification de la taille d'autres éléments car elle est utilisée pour calculer les valeurs des longueurs relatives (type <length>) (par exemple exprimées avec les unités em ou ex). */
+    padding: 25px;
+    margin-top: 30px;
 }
 
 .header__instruction--titre-detail { /* On selectionne la parti que l'on veut modifier. */
@@ -89,6 +91,10 @@ body, html {  /* On selectionne la parti que l'on veut modifier. */
     border-radius: 2px;
 }
 
+#answerinput {
+    margin-bottom: 25px;
+}
+
 .submit {
     background-color: #ffffff;
     font-size: 16px;
@@ -109,7 +115,7 @@ body, html {  /* On selectionne la parti que l'on veut modifier. */
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 50px;
+    padding: 30px;
 }
 
 button {
