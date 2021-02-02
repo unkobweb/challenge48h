@@ -15,5 +15,6 @@ router.get("/clue", puzzleController.clue)
 router.post("/answer", urlencodedParser, puzzleController.answer)
 router.post("/isRightPostion", urlencodedParser, puzzleController.checkPostion)
 router.get("/GetDecryptKey", puzzleController.sendToServer)
+router.post("/infoSnowden", puzzleController.infoSnowden)
 
 module.exports = router;
