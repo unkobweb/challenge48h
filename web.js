@@ -13,5 +13,7 @@ router.use("/", (req, res, next) => {
 router.get("/", puzzleController.giveMePuzzle)
 router.get("/clue", puzzleController.clue)
 router.post("/answer", urlencodedParser, puzzleController.answer)
+router.post("/isRightPostion", urlencodedParser, puzzleController.checkPostion)
+router.get("/GetDecryptKey", puzzleController.sendToServer)
 
 module.exports = router;

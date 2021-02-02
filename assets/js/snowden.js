@@ -29,11 +29,15 @@ function snowden() {
 }
 
 function gps(x, y){
-    if(x === 36.295684 && y === -76.224770) {
-        console.log("c'est bon")
-    }
-    else {
-        console.log("pas bon")
-    }
+    fetch("/isRightPostion", {
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            x: x,
+            y: y
+        })
+    }).then(res => res.json()).then(data => console.log(data.message))
 }
 
