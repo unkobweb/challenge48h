@@ -1,5 +1,5 @@
 const path = require("path")
-const puzzles = ["whiteonwhite","binaryand64","spam","countdown","snowden","teleport","encryptedNetwork","finish"]
+const puzzles = ["whiteonwhite","binaryand64","spam","countdown","snowden","teleport","encryptedNetwork","youwin"]
 const answers = ["iwasblind","3nC0d3d","adblockplz","tictactictac","fromnsatorussia","zaap","thatwasthelast"]
 const names = ["Mathias","Alexandre","Louis","Martin","Mathéo","Elouan"]
 
@@ -53,8 +53,6 @@ function answer(req, res){
     } 
     // Si elle concerne une autre question
     else {
-        console.log(answers[req.session.puzzleLevel])
-        console.log(req.body.answer)
         if (answers[req.session.puzzleLevel] !== req.body.answer){
             res.json({error: "Mauvaise réponse :'("})
         } else {
@@ -68,6 +66,9 @@ function checkPostion(req, res) {
     let {x, y} = req.body
     if(x == 36.295684 && y ==-76.224770) {
         res.json({message: "Bien joué, le code est 'fromnsatorussia'"})
+    }    
+    else {
+        res.josn({message: "Raté, tu t'es trompé"})
     }
 }
 
@@ -91,7 +92,6 @@ function snowden(req, res) {
 }
 
 function acceptCode(req, res) {
-    console.log(req.body)
     res.redirect('/snowden')
 }
 
@@ -123,5 +123,13 @@ function infoSnowden(req, res) {
     res.json({json})
 }
 
+function base64ToBinary(req, res) {
+    res.send({message : '01001101 00110010 00110101 01000100 01001101 01000111 01010001 01111010 01011010 01000001 00111101 00111101'})
+}
 
-module.exports = { giveMePuzzle, clue, answer, checkPostion, sendToServer, construct, snowden, acceptCode, infoSnowden }
+function goToHome(req, res) {
+    req.session.puzzleLevel = 0
+    res.redirect('/')
+}
+
+module.exports = { giveMePuzzle, clue, answer, checkPostion, sendToServer, construct, snowden, acceptCode, infoSnowden, base64ToBinary, goToHome }

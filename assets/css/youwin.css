@@ -79,7 +79,7 @@ body, html {  /* On selectionne la parti que l'on veut modifier. */
   color: rgba(0, 0, 0, 0);
 }
 
-.egnime1 {
+.buttonGoHome {
   text-align: center;
 }
 
@@ -167,4 +167,4 @@ button:hover span:after {
   flex-direction: column;
   font-size: 30px;
   padding: 20px;
-}
+} 
