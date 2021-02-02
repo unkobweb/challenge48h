@@ -1,4 +1,5 @@
 let countdown = 7200;
+let alreadyWin = false;
 
 function twoDigits(number){
     if (String(number).length == 1){
@@ -27,11 +28,28 @@ function fromSecondsToHours(seconds){
 }
 
 setInterval(() => {
-    countdown--
-    document.querySelector("#countdown").innerHTML = fromSecondsToHours(countdown)
+    if (!alreadyWin){
+        countdown--
+        document.querySelector("#countdown").innerHTML = fromSecondsToHours(countdown)
 
-    if (countdown < 1){
-        console.log("CHALLENGE FINISHED")
+        if (countdown < 1){
+            fetch("/answer",{
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    answer: "tictactictac"
+                })
+            }).then(res => res.json()).then(data => {
+                if (data.error){
+                    alert(data.error)
+                } else {
+                    alreadyWin = true
+                    alert("Bonne réponse !")
+                    window.location.href = "/"
+                }
+            })
+        }
     }
-
 }, 1000)

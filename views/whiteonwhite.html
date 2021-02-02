@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href ="/assets/img/Capture.JPG" rel="icon" type="Images/svg"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <!--L'élément HTML <link> définit la relation entre le document courant et une ressource externe. Cet élément peut être utilisé pour définir un lien vers une feuille de style, vers les icônes utilisées en barre de titre ou comme icône d'application sur les appareils mobiles.-->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/MysteryCode.css">
-    <title>TheGoatEncryptor</title>
+    <link rel="stylesheet" href="/css/egnime1.css">
+    <title>TheGoatEncryptor - Énigme 1</title>
 </head>
 <body>
-    <form action="" method="POST">
         <div class="header">
             <div class="header__texture"></div>
             <div class="header__mask">
@@ -23,7 +21,7 @@
                 </svg>
             </div>
             <div class="container">
-                <h3 id= numberEnigma>N° ?/?</h3>
+                <h3 id="numberEnigma">N° 1/4</h3>
                 <div class="thegoat">
                     <pre>
             ,--._,--.
@@ -47,23 +45,30 @@
                 <div class="header__navbar">
                     <div class="hearder__navbar--logo">
                     </div>
+                    <div class="hearder__navbar--menu">
+                        <a class="menu1" href="" class="header__navbar--menu-link"><i class="fas fa-map-pin"></i> Nothing here ...</a>
+                        <a class="menu2" href="" class="header__navbar--menu-link"><i class="fab fa-github"></i> C'est bugué non ?</a>
+                    </div>
                 </div>
                 <div class="header__instruction">
-                    <h2 class="header__instruction--titre"> Enigme n ?</h2>
-                    <h3 class="header__instruction--titre-detail">L'énigme du code mystère</h3>
+                    <h2 class="header__instruction--titre"> Égnime n°1</h2>
+                    <h3 class="header__instruction--titre-detail">Qui suis-je ?</h3>
                 </div>
             </div>
         </div>
-        <div class="button">
-            <input type="button" class="valid" value="Cliquez ici pour la suite"/>
-            <p>
-               <!-- Bien essayé ! Tu dois modifier quelque(s) chose(s) pour réussir -->
-            </p>
+        <div class="egnime1">
+            <h3 class="result">Entrez votre réponse :</h3>
+            <input class="input" type="text" name="string" id="answerinput" placeholder="Qui suis-je ?">
+            <br>
+            <br>
+            <input class="submit" type="button" id="submiter" value="Valider">
         </div>
-        <!-- <div class= "help">
-            <input type="button" class="Aide" value="Un peu d'aide ? ">
-        </div> -->
-    </form>
-    
+        <h4 class="contain_h4">Hmm c'est étrange, il y a une erreur .. en haut à gauche ?</h4>
+        <div class="contain_instruction">
+                <div class="div_relou">
+                    <h5 class="contain_h5">whiteonwhite</h5>
+                </div>
+        </div>
+    <script src="/js/answer.js"></script>
 </body>
 </html>
