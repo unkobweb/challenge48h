@@ -42,7 +42,7 @@ z-index: 10;
 .header__instruction {
 text-align: center;
 color: #fff;
-margin-top: 10px;
+margin-top: 30px;
 }
 
 .header__instruction--titre {
@@ -89,7 +89,7 @@ color: white;
 display: flex;
 align-items: center;
 flex-direction: column;
-margin-bottom: 30px;
+margin-top: 30px;
 }
 
 #countdown {
@@ -98,6 +98,7 @@ font-size: 50px;
 display: flex;
 align-items: center;
 flex-direction: column;
+margin-top: 50px;
 }
 
 #numberEnigma {
