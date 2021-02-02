@@ -5,6 +5,11 @@ const names = ["Mathias","Alexandre","Louis","Martin","Mathéo","Elouan"]
 
 function giveMePuzzle(req, res){
     
+    if (req.session.startTeleportAt && (parseInt(Math.floor((new Date().getTime())/1000) - req.session.startTeleportAt) >= 600)){
+        delete req.session.puzzleLevel
+        delete req.session.startTeleportAt
+    }
+
     if (!req.session.puzzleLevel){
         req.session.puzzleLevel = 0
     }
@@ -30,10 +35,10 @@ function answer(req, res){
     // Si la réponse concerne la question 6
     if (req.session.puzzleLevel == 5) {
         let { type, detail } = req.body.answer
-        if ((Math.floor(new Date().getTime()/1000) - req.session.startTeleportAt) >= 600){
+        if (parseInt(Math.floor((new Date().getTime())/1000) - req.session.startTeleportAt) >= 600){
             req.session.puzzleLevel = 0
             delete req.session.startTeleportAt
-            res.json({success: "SESSION CLEARED"})
+            res.json({success: "Le serveur à repérer la connexion comme étant frauduleuse.\nConnection closed"})
         }
         else if (type == "click" && detail > 0){
             req.session.puzzleLevel++
