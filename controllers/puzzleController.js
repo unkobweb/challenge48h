@@ -6,7 +6,7 @@ const names = ["Mathias","Alexandre","Louis","Martin","Mathéo","Elouan"]
 function giveMePuzzle(req, res){
     
     if (!req.session.puzzleLevel){
-        req.session.puzzleLevel = 6
+        req.session.puzzleLevel = 4
     }
 
     if (req.session.puzzleLevel == 5 && !req.session.startTeleportAt){
@@ -81,4 +81,18 @@ function sendToServer(req, res) {
     res.send(message)
 }
 
-module.exports = { giveMePuzzle, clue, answer, checkPostion, sendToServer }
+function construct(req, res) {
+    res.sendFile(path.join(__dirname,"../views","toServer.html"))
+}
+
+function snowden(req, res) {
+    res.sendFile(path.join(__dirname,"../views","snowden.html"))
+}
+
+function acceptCode(req, res) {
+    console.log(req.body)
+    res.redirect('/snowden')
+}
+
+
+module.exports = { giveMePuzzle, clue, answer, checkPostion, sendToServer, construct, snowden, acceptCode }
