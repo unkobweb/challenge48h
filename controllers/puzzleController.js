@@ -6,7 +6,7 @@ const names = ["Mathias","Alexandre","Louis","Martin","Mathéo","Elouan"]
 function giveMePuzzle(req, res){
     
     if (!req.session.puzzleLevel){
-        req.session.puzzleLevel = 0
+        req.session.puzzleLevel = 5
     }
 
     if (req.session.puzzleLevel == 5 && !req.session.startTeleportAt){
