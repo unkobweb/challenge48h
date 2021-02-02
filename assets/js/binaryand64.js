@@ -1,3 +1,8 @@
 function get64baseEncodedInBinary(){
-    console.log('01001101 00110010 00110101 01000100 01001101 01000111 01010001 01111010 01011010 01000001 00111101 00111101')
+    fetch("/base64ToBinary", {
+        method: "GET",
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }).then(res => res.json()).then(data => console.log(data.message))
 }
